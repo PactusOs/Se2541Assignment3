@@ -1,0 +1,9 @@
+package kz.se41.dbforassign3.entities_repositories;
+
+import kz.se41.dbforassign3.entities.SportClub;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface SportClubRep  extends JpaRepository<SportClub,Long> {
+}

@@ -47,6 +47,9 @@ public class Player {
     public int getWeight() {
         return weight;
     }
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
 
     public String getSkill() {
         return skill;
@@ -54,10 +57,6 @@ public class Player {
 
     public void setSkill(String skill) {
         this.skill = skill;
-    }
-
-    public void setWeight(int weight) {
-        this.weight = weight;
     }
 
     public List<Sport> getSports() {
