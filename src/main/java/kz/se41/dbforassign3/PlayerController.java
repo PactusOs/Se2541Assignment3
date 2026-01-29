@@ -15,8 +15,8 @@ public class PlayerController {
     @Autowired
     private PlayerService playerService;
 
-    @GetMapping("/index_se")
-    public List<Player> getPlayers() {
+    @GetMapping("/player")
+    public List<Player> getAllPlayers() {
         return playerService.getAllPlayers();
     }
 }

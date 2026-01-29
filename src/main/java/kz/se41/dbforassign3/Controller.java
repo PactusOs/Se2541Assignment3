@@ -14,10 +14,11 @@ import java.util.List;
 
     @Autowired
     private SportService sportService;
+    @Autowired
     private SportClubService sportClubService;
 
         @GetMapping("/index_se")//http://localhost:8080/index
-        public List<SportClub> getSportClubs() {
+        public List<SportClub> getAllSportClubs() {
             return sportClubService.getAllSportClubs();
         }
         public List<Sport> getSports() {
