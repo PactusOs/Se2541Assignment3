@@ -1,5 +1,6 @@
 package kz.se41.dbforassign3.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 @Entity
@@ -14,6 +15,7 @@ public class Sport {
 
     @ManyToOne
     @JoinColumn(name = "player_id")
+    @JsonIgnore
     private Player player;
 
     public Long getId() {

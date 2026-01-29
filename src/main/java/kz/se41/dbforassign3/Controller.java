@@ -1,6 +1,6 @@
 package kz.se41.dbforassign3;
-import kz.se41.dbforassign3.entities.Sport;
 import kz.se41.dbforassign3.entities.SportClub;
+import kz.se41.dbforassign3.entities_service.PlayerService;
 import kz.se41.dbforassign3.entities_service.SportClubService;
 import kz.se41.dbforassign3.entities_service.SportService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,12 +16,11 @@ import java.util.List;
     private SportService sportService;
     @Autowired
     private SportClubService sportClubService;
+    @Autowired
+    private PlayerService playerService;
 
-        @GetMapping("/index_se")//http://localhost:8080/index
+        @GetMapping("/sportclub")//http://localhost:8080/sportclub
         public List<SportClub> getAllSportClubs() {
             return sportClubService.getAllSportClubs();
-        }
-        public List<Sport> getSports() {
-            return sportService.getAllSports();
         }
     }
