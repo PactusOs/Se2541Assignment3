@@ -2,7 +2,6 @@ package kz.se41.dbforassign3.entities_service;
 
 import kz.se41.dbforassign3.entities.Player;
 import kz.se41.dbforassign3.entities_repositories.PlayerRep;
-import kz.se41.dbforassign3.entities_repositories.SportClubRep;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
