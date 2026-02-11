@@ -25,8 +25,8 @@ public class SportController {
 
     @PutMapping("/{id}")
     public Sport update(@PathVariable Long id,
-                         @RequestBody Sport player) {
-        return sportService.update(id, player);
+                         @RequestBody Sport sport) {
+        return sportService.update(id, sport);
     }
 
     @DeleteMapping("/{id}")

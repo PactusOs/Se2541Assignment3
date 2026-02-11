@@ -19,6 +19,7 @@ public class SportService {
     private SportRep sportRep;
     @Autowired
     private PlayerRep playerRep;
+
     public List<Sport> getAllSports(){
         return sportRep.findAll();
     }
